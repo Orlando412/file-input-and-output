@@ -12,3 +12,4 @@ C:\Users\orlan\OneDrive\Desktop\file input and output\milemanagement\obj\Debug\n
 C:\Users\orlan\OneDrive\Desktop\file input and output\milemanagement\obj\Debug\net8.0\milemanagement.pdb
 C:\Users\orlan\OneDrive\Desktop\file input and output\milemanagement\obj\Debug\net8.0\milemanagement.genruntimeconfig.cache
 C:\Users\orlan\OneDrive\Desktop\file input and output\milemanagement\obj\Debug\net8.0\ref\milemanagement.dll
+C:\Users\orlan\OneDrive\Desktop\file input and output\milemanagement\obj\Debug\net8.0\milemanagement.sourcelink.json
