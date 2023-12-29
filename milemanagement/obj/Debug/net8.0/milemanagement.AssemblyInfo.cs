@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("milemanagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c83c75cbc0f17c00384ea284c55b388b7815a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1361fb66f8198f6e57b8e53069f9d37c27067de5")]
 [assembly: System.Reflection.AssemblyProductAttribute("milemanagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("milemanagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

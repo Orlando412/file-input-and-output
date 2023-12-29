@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Net.Mime;
 
 
 
@@ -28,7 +29,9 @@ namespace FileManagementSystem
           case '1':
           Console.WriteLine("Enter a file name to create file: ");
           string fileName = Console.ReadLine();
-          CreateFile(directoryPath, fileName);
+          Console.WriteLine("Enter text in for created file: ");
+          string text = Console.ReadLine();
+          CreateFile(directoryPath, fileName, text);
           break;
           case '2':
           Console.WriteLine("Enter a file name to create file: ");
@@ -50,7 +53,7 @@ namespace FileManagementSystem
       try 
       {
         string[] files = Directory.GetFiles(path);
-        Console.WriteLine("File in directory is deleted");
+        Console.WriteLine("Files in directory: ");
         foreach(string file in files) 
         {
           Console.WriteLine(Path.GetFileName(file));
@@ -65,13 +68,17 @@ namespace FileManagementSystem
     }
 
 
-    static void CreateFile(string path, string fileName) {
+    static void CreateFile(string path, string fileName, string content) {
       try
       {
         string filePath = Path.Combine(path, fileName);
         if(!File.Exists(filePath))
         {
           File.Create(filePath).Close();
+          using(StreamWriter writer = File.CreateText(filePath)) 
+          {
+            writer.WriteLine(content);
+          }
           Console.WriteLine($"{fileName} created successfully ");
         }
         else
